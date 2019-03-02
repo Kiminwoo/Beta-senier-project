@@ -1,0 +1,43 @@
+doctype html
+html
+    head 
+        meta(charset='utf-8')
+    body
+        h1 CategorySci-fi&CategoryFantasyPage 
+        br
+        h3 <공상과학이나 판타지 좋아해?>
+        br
+        br
+        br
+        
+        form(action='CategoryAction', method='post')
+            div(style='width:300px; height:300px; border:1px solid black; float:left; margin-right:70px;')
+                input(type='image' name='Single' value='Single' alt='Single' src="/Sci-fi.jpg" width="300px" height="300px")
+                input(type='hidden', name='Sci_fi_value', value='Sci-fi')
+                input(type='hidden' name='Sci_fi_TF' value='TRUE')
+
+        form(action='CategoryAction', method='post')
+            div(style='width:300px; height:300px; border:1px solid black; float:left; margin-right:70px;')
+                input(type='image' name='Multi' value='Multi' alt='Multi' src="/Fantasy.jpg" width="300px" height="300px")
+                input(type='hidden', name='Fantasy_value', value='Fantasy')
+                input(type='hidden', name='Fantasy_TF' value='TRUE')
+
+        form(action='CategoryAction', method='post')
+            div(style='width:300px; height:300px; border:1px solid black; float:left; margin-right:70px;')
+                input(type='image' name='Multi' value='Multi' alt='Multi' src="/Both.jpg" width="300px" height="300px")
+                
+                input(type='hidden', name='Sci_fi_value', value='Sci-fi')
+                input(type='hidden' name='Sci_fi_TF' value='TRUE')
+
+                input(type='hidden', name='Fantasy_value', value='Fantasy')
+                input(type='hidden', name='Fantasy_TF' value='TRUE')
+
+        form(action='CategoryAction', method='post')
+            div(style='width:300px; height:300px; border:1px solid black; float:left;')
+                input(type='image' name='Multi' value='Multi' alt='Multi' src="/none.jpg" width="300px" height="300px")
+                
+                input(type='hidden', name='Sci_fi_value', value='Sci-fi')
+                input(type='hidden' name='Sci_fi_TF' value='FALSE')
+
+                input(type='hidden', name='Fantasy_value', value='Fantasy')
+                input(type='hidden', name='Fantasy_TF' value='FALSE')

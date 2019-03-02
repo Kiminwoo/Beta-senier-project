@@ -1,0 +1,25 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+    
+    body
+        h1 CausalVsDarkPage 
+        br
+        h3 <밝은 분위기? 어두운 분위기?>
+        br
+        br
+        br
+        form(action='Cute&Music&Humor&Comedy', method='post')
+            div(style='width:300px; height:300px; border:1px solid black; float:left; margin-right:70px;')
+                input(type='image' name='Single' value='Single' alt='Single' src="/Bright.jpg" width="300px" height="300px")
+                input(type='hidden', name='Causal_value', value='Causal')
+                input(type='hidden' name='Causal_TF' value='TRUE')
+
+                
+
+        form(action='Horror&Story-Rich&Relaxing', method='post')
+            div(style='width:300px; height:300px; border:1px solid black; float:left;')
+                input(type='image' name='Multi' value='Multi' alt='Multi' src="/Dark.jpg" width="300px" height="300px")
+                input(type='hidden', name='Dark_value', value='Dark')
+                input(type='hidden', name='Dark_TF' value='TRUE')

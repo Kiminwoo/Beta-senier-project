@@ -1,0 +1,22 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+    body 
+        h1 CategoryCoopPage
+        br
+        h3 <내 편이 여러명 인게 좋아?>
+        br
+        br
+        br     
+        form(action='IsFree&GenreIsFreeToPlay', method='post')
+            div(style='width:300px; height:300px; border:1px solid black; float:left; margin-right:70px;')
+                input(type='image' name='Single' value='Single' alt='Single' src="/3.png" width="300px" height="300px")
+                input(type='hidden', name='CategoryCoop_value', value='CategoryCoop')
+                input(type='hidden' name='CategoryCoop_TF' value='TRUE')
+
+        form(action='IsFree&GenreIsFreeToPlay', method='post')
+            div(style='width:300px; height:300px; border:1px solid black; float:left;')
+                input(type='image' name='Multi' value='Multi' alt='Multi' src="/4.png" width="300px" height="300px")
+                input(type='hidden', name='CategoryCoop_value', value='CategoryCoop')
+                input(type='hidden', name='CategoryCoop_TF' value='FALSE')

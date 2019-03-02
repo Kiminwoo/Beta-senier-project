@@ -1,0 +1,38 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+    style.
+        table {
+        border: 1px solid #444444;
+        }
+        th, td {
+        border: 1px solid #444444;
+        }
+    body
+        h1 ResultPage 
+        br
+        br
+        br
+        -var Game_Tag = [First_Tag,Multi_value,CategoryCoop_value,CategoryMMO_value,IsFree_value,GenreIsFreeToPlay_value,PurchaseAvail_value,Causal_value,Dark_value,Cute_value,Music_value,Comedy_value,Humor_value,Story_Rich_value,Relaxing_value,Gore_value,Survive_value,Stratgy_value,Puzzle_value,Sci_fi_value,Fantasy_value,Action_value,Violent_value,Shooter_value,sports_value,Racing_value,Farm_value,Simulation_value,Build_value];
+        -var TF = [First_TF,Multi_TF,CategoryCoop_TF,CategoryMMO_TF,IsFree_TF,GenreIsFreeToPlay_TF,PurchaseAvail_TF,Causal_TF,Dark_TF,Cute_TF,Music_TF,Comedy_TF,Humor_TF,Story_Rich_TF,Relaxing_TF,Gore_TF,Survive_TF,Stratgy_TF,Puzzle_TF,Sci_fi_TF,Fantasy_TF,Action_TF,Violent_TF,Shooter_TF,sports_TF,Racing_TF,Farm_TF,Simulation_TF,Build_TF];
+        -var Basic_Game_Tag =["Single","Multi","Coop","MMO","IsFree","GenreIsFreeToplay","PurchaseAvail","Causal","Dark","Cute","Music","Comedy","Humor","Story-Rich","Relaxing","Gore","Survive","Stratgy","Puzzle","Sci_fi","Fantasy","Action","Violent","Shooter","sports","Racing","Farm","Simulation","Build"];
+        table
+                tbody
+            
+                tr
+                    td(colspan='2' align = "center") User imformation
+                
+                - for (var i = 0 ; i < Game_Tag.length ; ++i){
+                    if Game_Tag[i]
+                        tr(align = "center" bgcolor="black")
+                            td(style="color:white")= Game_Tag[i]
+                            td(style="color:white")= TF[i]
+                    else
+                        tr(align = "center")
+                            td= Basic_Game_Tag[i]
+                            td NotSelected
+                        tr(align = "center")
+                - }
+       
+        

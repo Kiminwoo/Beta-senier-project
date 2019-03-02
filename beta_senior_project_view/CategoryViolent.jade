@@ -1,0 +1,27 @@
+doctype html   
+html    
+    head
+        meta(charset='utf-8')
+    body
+        h1 CategoryViolentPage
+        br
+        h3 <폭력적이어도 괜찮아?>
+        br
+        br
+        br
+      
+        form(action='CategoryShooter', method='post')
+            div(style='width:300px; height:300px; border:1px solid black; float:left; margin-right:70px;')
+                input(type='image' name='Multi' value='Multi' alt='Multi' src="/3.png" width="300px" height="300px")
+                
+                input(type='hidden' name='Violent_value', value='Violent')
+                input(type='hidden' name='Violent_TF' value='TRUE')
+        
+        form(action='CategoryShooter', method='post')
+            div(style='width:300px; height:300px; border:1px solid black; float:left;')
+                input(type='image' name='Multi' value='Multi' alt='Multi' src="/4.png" width="300px" height="300px")
+                                
+                input(type='hidden' name='Violent_value', value='Violent')
+                input(type='hidden' name='Violent_TF' value='FALSE')
+        
+            

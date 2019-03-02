@@ -1,0 +1,23 @@
+doctype html
+html
+    head 
+        meta(charset='utf-8')
+    body 
+        h1 CategoryStratgyPage 
+        br
+        h3 <머리쓰는 두뇌게임 좋아해?>
+        br
+        br
+        br
+        form(action='CategoryPuzzle', method='post')
+            div(style='width:300px; height:300px; border:1px solid black; float:left; margin-right:70px; ')
+                input(type='image' name='Multi' value='Multi' alt='Multi' src="/3.png" width="300px" height="300px")
+                input(type='hidden', name='Stratgy_value', value='Stratgy')
+                input(type='hidden', name='Stratgy_TF' value='TRUE')
+
+        form(action='CategorySci-fi&CategoryFantasy', method='post')
+            div(style='width:300px; height:300px; border:1px solid black; float:left; margin-right:70px; ')
+                input(type='image' name='Multi' value='Multi' alt='Multi' src="/4.png" width="300px" height="300px")
+                input(type='hidden', name='Stratgy_value', value='Stratgy')
+                input(type='hidden', name='Stratgy_TF' value='NONE')
+                

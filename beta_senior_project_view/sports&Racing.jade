@@ -1,0 +1,43 @@
+doctype html
+html   
+    head
+        meta(charset='utf8')
+    body
+        h1 sports&RacingPage
+        br
+        h3 <스포츠게임이나 레이싱게임은 어때?>
+        br
+        br
+        br
+        
+        form(action='Farm&Simulation&Building', method='post')
+            div(style='width:300px; height:300px; border:1px solid black; float:left; margin-right:70px;')
+                input(type='image' name='Single' value='Single' alt='Single' src="/sports.jpg" width="300px" height="300px")
+                input(type='hidden', name='sports_value', value='sports')
+                input(type='hidden' name='sports_TF' value='TRUE')
+
+        form(action='Farm&Simulation&Building', method='post')
+            div(style='width:300px; height:300px; border:1px solid black; float:left; margin-right:70px;')
+                input(type='image' name='Multi' value='Multi' alt='Multi' src="/Racing.jpg" width="300px" height="300px")
+                input(type='hidden', name='Racing_value', value='Racing')
+                input(type='hidden', name='Racing_TF' value='TRUE')
+
+        form(action='Farm&Simulation&Building', method='post')
+            div(style='width:300px; height:300px; border:1px solid black; float:left; margin-right:70px;')
+                input(type='image' name='Multi' value='Multi' alt='Multi' src="/Both.jpg" width="300px" height="300px")
+                
+                input(type='hidden', name='sports_value', value='sports')
+                input(type='hidden' name='sports_TF' value='TRUE')
+
+                input(type='hidden', name='Racing_value', value='Racing')
+                input(type='hidden', name='Racing_TF' value='TRUE')
+
+        form(action='Farm&Simulation&Building', method='post')
+            div(style='width:300px; height:300px; border:1px solid black; float:left;')
+                input(type='image' name='Multi' value='Multi' alt='Multi' src="/none.jpg" width="300px" height="300px")
+                
+                input(type='hidden', name='sports_value', value='sports')
+                input(type='hidden' name='sports_TF' value='FALSE')
+
+                input(type='hidden', name='Racing_value', value='Racing')
+                input(type='hidden', name='Racing_TF' value='FALSE')
