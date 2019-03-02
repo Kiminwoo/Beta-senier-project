@@ -2,4 +2,4 @@
 
 2019-03-02 
 
--->Additional parts: Displaying your selections in a table
+- Additional parts: Displaying your selections in a table
