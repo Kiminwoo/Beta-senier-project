@@ -260,6 +260,24 @@ app.post('/Cute&Music&Humor&Comedy' , function(req,res)
   Causal_TF = req.body.Causal_TF;
   res.render('Cute&Music&Humor&Comedy');
 })
+
+// Both 
+app.get('/BothCute&Music&Humor&Comedy' , function(req,res)
+{
+  res.render('BothCute&Music&Humor&Comedy');
+});
+
+app.post('/BothCute&Music&Humor&Comedy' , function(req,res)
+{
+  Causal_value = req.body.Causal_value;
+  Causal_TF = req.body.Causal_TF;
+
+  Dark_value = req.body.Dark_value;
+  Dark_TF = req.body.Dark_TF;
+
+  res.render('BothCute&Music&Humor&Comedy');
+});
+
 // N
 
 app.get('/Horror&Story-Rich&Relaxing' , function(req,res)
@@ -289,6 +307,47 @@ app.post('/Gore&Survive' , function(req,res)
 
   res.render('Gore&Survive');
 })
+
+// Both 
+
+app.get('/BothHorror&Story-Rich&Relaxing' , function(req,res)
+{
+  res.render('BothHorror&Story-Rich&Relaxing');
+});
+
+app.post('/BothHorror&Story-Rich&Relaxing' , function(req,res)
+{
+  Cute_value = req.body.Cute_value;
+  Cute_TF = req.body.Cute_TF;
+
+  Music_value = req.body.Music_value;
+  Music_TF = req.body.Music_TF;
+
+  Humor_value = req.body.Humor_value;
+  Humor_TF = req.body.Humor_TF;
+
+  Comedy_value = req.body.Comedy_value;
+  Comedy_TF = req.body.Comedy_TF;
+
+  Horror_value = req.body.Horror_value;
+  Horror_TF = req.body.Horror_TF;
+
+  res.render('BothHorror&Story-Rich&Relaxing');
+})
+
+app.get('/BothGore&Survive' , function(req,res)
+{
+  res.render('Gore&Survive');
+});
+
+app.post('/BothGore&Survive' , function(req,res)
+{
+  Horror_value = req.body.Horror_value;
+  Horror_TF = req.body.Horror_TF;
+
+  res.render('Gore&Survive');
+});
+
 
 //  N - others 
 //  --> CategoryStratgy 
